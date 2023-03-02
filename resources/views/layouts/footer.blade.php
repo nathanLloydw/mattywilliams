@@ -52,7 +52,9 @@
                 </div>
             @endif
 
-            <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8">
+            @if(!$navigation_settings['funky_footer'])
+                <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8">
+            @endif
             <div class="flex flex-col sm:flex-row items-center sm:justify-between">
         <span class="text-sm text-gray-500 text-center">© 2022 <a href="#" class="hover:text-primary">{{ $company_details['company_name'] }}™</a>. All Rights Reserved.
         </span>
