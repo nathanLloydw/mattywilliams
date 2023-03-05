@@ -67,50 +67,6 @@ sections:
           if:
             sticky: 'equals true'
           width: 50
-      -
-        handle: nav_controlled_header
-        field:
-          default: false
-          display: 'Nav Controlled Header'
-          type: toggle
-          icon: toggle
-          listable: hidden
-          instructions_position: above
-          visibility: visible
-          always_save: false
-      -
-        handle: navigation_hero
-        field:
-          collapse: false
-          previews: true
-          sets:
-            navigation_hero_image:
-              display: 'Navigation Hero Image'
-              fields:
-                -
-                  handle: image
-                  field:
-                    mode: list
-                    container: images
-                    restrict: false
-                    allow_uploads: true
-                    show_filename: true
-                    display: Image
-                    type: assets
-                    icon: assets
-                    listable: hidden
-                    instructions_position: above
-                    visibility: visible
-                    always_save: false
-          display: 'Navigation Hero'
-          type: replicator
-          icon: replicator
-          listable: hidden
-          instructions_position: above
-          visibility: visible
-          always_save: false
-          if:
-            nav_controlled_header: 'equals true'
   footer_navigation:
     display: 'Footer Navigation'
     fields:

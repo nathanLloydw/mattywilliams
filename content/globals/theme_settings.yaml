@@ -1,6 +1,6 @@
 title: 'Theme Settings'
 data:
-  primary_colour: '#FA255E'
-  secondary_colour: '#FF2400'
-  support_colour: '#F8E5E5'
-  background_colour: '#4C5464'
+  primary_colour: '#00B8FF'
+  secondary_colour: '#009BD6'
+  support_colour: '#7FDBFF'
+  background_colour: '#00415A'
