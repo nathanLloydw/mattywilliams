@@ -96,6 +96,21 @@ fields:
           fields:
             -
               import: gallery_block_three
+        image_block:
+          display: 'Image Block'
+          fields:
+            -
+              import: image_block
+        title_block:
+          display: 'Title Block'
+          fields:
+            -
+              import: title_block
+        video_block:
+          display: 'Video Block'
+          fields:
+            -
+              import: video_block
       display: Components
       type: replicator
       icon: replicator

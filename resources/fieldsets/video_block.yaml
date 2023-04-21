@@ -1,0 +1,13 @@
+title: 'Video Block'
+fields:
+  -
+    handle: iframe
+    field:
+      input_type: text
+      antlers: false
+      display: Iframe
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible

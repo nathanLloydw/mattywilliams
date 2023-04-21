@@ -5,4 +5,4 @@ data:
   shrinkable: true
   footer_sticky: false
   show_footer_navigation: false
-  funky_footer: false
+  funky_footer: true

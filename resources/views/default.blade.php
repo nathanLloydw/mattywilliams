@@ -5,7 +5,7 @@
     @includeIf('layouts.navigation')
 
 
-    <div class="content flex-grow">
+    <div class="content flex-grow py-4">
         
         @foreach($components as $component)
 
