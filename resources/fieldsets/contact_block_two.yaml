@@ -73,8 +73,6 @@ fields:
       instructions_position: above
       visibility: visible
       always_save: false
-      validate:
-        - required
   -
     handle: address
     field:
@@ -87,5 +85,3 @@ fields:
       instructions_position: above
       visibility: visible
       always_save: false
-      validate:
-        - required
