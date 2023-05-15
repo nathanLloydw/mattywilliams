@@ -19,6 +19,7 @@ fields:
         pulse: Pulse
         scissors: Scissors
         user: User
+        none: None
       multiple: false
       max_items: 1
       clearable: false
@@ -33,3 +34,4 @@ fields:
       instructions_position: above
       visibility: visible
       always_save: false
+      default: none

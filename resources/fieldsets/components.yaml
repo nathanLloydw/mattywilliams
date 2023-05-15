@@ -6,6 +6,21 @@ fields:
       collapse: true
       previews: true
       sets:
+        title_block:
+          display: 'Title Block'
+          fields:
+            -
+              import: title_block
+        image_block:
+          display: 'Image Block'
+          fields:
+            -
+              import: image_block
+        video_block:
+          display: 'Video Block'
+          fields:
+            -
+              import: video_block
         hero_block_one:
           display: 'Hero Block One'
           fields:
@@ -21,11 +36,6 @@ fields:
           fields:
             -
               import: hero_block_three
-        pricing_block_one:
-          display: 'Pricing Block One'
-          fields:
-            -
-              import: pricing_block_one
         testimonials_block_one:
           display: 'Testimonials Block One'
           fields:
@@ -36,16 +46,6 @@ fields:
           fields:
             -
               import: testimonials_block_two
-        call_to_action_block_one:
-          display: 'Call To Action Block One'
-          fields:
-            -
-              import: call_to_action_block_one
-        call_to_action_block_two:
-          display: 'Call To Action Block Two'
-          fields:
-            -
-              import: call_to_action_block_two
         contact_block_one:
           display: 'Contact Block One'
           fields:
@@ -71,46 +71,11 @@ fields:
           fields:
             -
               import: feature_block_three
-        feature_block_four:
-          display: 'Feature Block Four'
+        timeline_block:
+          display: 'Timeline Block'
           fields:
             -
-              import: feature_block_four
-        feature_block_five:
-          display: 'Feature Block Five'
-          fields:
-            -
-              import: feature_block_five
-        gallery_block_one:
-          display: 'Gallery Block One'
-          fields:
-            -
-              import: gallery_block_one
-        gallery_block_two:
-          display: 'Gallery Block Two'
-          fields:
-            -
-              import: gallery_block_two
-        gallery_block_three:
-          display: 'Gallery Block Three'
-          fields:
-            -
-              import: gallery_block_three
-        image_block:
-          display: 'Image Block'
-          fields:
-            -
-              import: image_block
-        title_block:
-          display: 'Title Block'
-          fields:
-            -
-              import: title_block
-        video_block:
-          display: 'Video Block'
-          fields:
-            -
-              import: video_block
+              import: timeline_block
       display: Components
       type: replicator
       icon: replicator
