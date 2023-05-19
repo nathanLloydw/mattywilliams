@@ -1,7 +1,7 @@
 ---
 id: dc09da3e-e71c-4255-8ce5-cd36be470032
 blueprint: page
-title: 'Timeline example'
+title: Timeline
 components:
   -
     id: lhpap6kv
@@ -204,5 +204,5 @@ components:
     type: contact_block_two
     enabled: true
 updated_by: 1
-updated_at: 1684513152
+updated_at: 1684513463
 ---
