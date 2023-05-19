@@ -5,18 +5,35 @@ fields:
     field:
       fields:
         -
-          handle: date
+          import: icon
+        -
+          handle: head_line
           field:
-            input_type: text
+            collapse: false
+            always_show_set_button: false
+            previews: true
+            smart_typography: false
+            buttons:
+              - bold
+            save_html: false
+            inline: false
+            toolbar_mode: fixed
+            link_noopener: false
+            link_noreferrer: false
+            target_blank: false
+            reading_time: false
+            fullscreen: true
+            allow_source: true
+            enable_input_rules: true
+            enable_paste_rules: true
             antlers: false
-            display: Date
-            type: text
-            icon: text
+            remove_empty_nodes: false
+            display: 'Head Line'
+            type: bard
+            icon: bard
             listable: hidden
             instructions_position: above
             visibility: visible
-        -
-          import: icon
         -
           handle: text
           field:

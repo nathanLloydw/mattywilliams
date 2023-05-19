@@ -1,4 +1,4 @@
-<section class="container mx-auto relative px-6 lg:px-14 py-12 lg:py-24">
+<section class="container mx-auto relative px-6 lg:px-14 py-6">
     <div class="flex flex-col text-center w-full mb-12">
 
         {!! $component['form_title'] !!}

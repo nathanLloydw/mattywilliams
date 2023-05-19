@@ -15,16 +15,30 @@ components:
         id: 4UkVh1EV
         date: 2023-2024
         icon: none
-        text:
+        asset: crufc-squad-1684181397.jpg
+        head_line:
           -
             type: paragraph
-            attrs:
-              textAlign: left
             content:
               -
                 type: text
-                text: 'English Championship | Cambridge RUFC'
-        asset: crufc-squad-1684181397.jpg
+                text: '2023-2024 | '
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                text: 'English Championship'
+              -
+                type: text
+                text: ' | Cambridge RUFC'
+        text:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: test
       -
         id: lhp9s8o5
         date: 2022-2023
@@ -32,13 +46,29 @@ components:
         text:
           -
             type: paragraph
-            attrs:
-              textAlign: left
             content:
               -
                 type: text
-                text: 'English National 1 | Cambridge RUFC'
+                text: 'League winners'
         asset: crufc-winners-1684182114.jpg
+        head_line:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: '2022-2023 | '
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                text: 'English National 1'
+              -
+                type: text
+                text: ' | Cambridge RUFC'
+          -
+            type: paragraph
       -
         id: lhp9shw1
         date: 2021-2022
@@ -46,13 +76,27 @@ components:
         text:
           -
             type: paragraph
-            attrs:
-              textAlign: left
             content:
               -
                 type: text
-                text: 'Welsh Premiership | Merthyr RFC'
+                text: 'Finished 6th'
         asset: merthyr-1684182310.webp
+        head_line:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: '2022 | '
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                text: 'Welsh Premiership'
+              -
+                type: text
+                text: ' | Merthyr RFC'
       -
         id: lhp9srmm
         date: 2020-2021
@@ -60,13 +104,27 @@ components:
         text:
           -
             type: paragraph
-            attrs:
-              textAlign: left
             content:
               -
                 type: text
-                text: 'Welsh Championship | Bedwas RFC'
+                text: COVID
         asset: bedwas-1684182318.jpg
+        head_line:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: '2020-2021 | '
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                text: 'Welsh Championship'
+              -
+                type: text
+                text: ' | Bedwas RFC'
       -
         id: lhp9toxg
         date: '2019-2020 - Welsh Championship at Bedwas RFC'
@@ -79,6 +137,22 @@ components:
                 type: text
                 text: 'Finished 3rd'
         asset: bedwas-action-1684182326.jpg
+        head_line:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: '2019-2020 | '
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                text: 'Welsh Championship'
+              -
+                type: text
+                text: ' | Bedwas RFC'
       -
         id: lhp9tu5i
         date: '2014-2019 - Dragons Academy'
@@ -99,6 +173,19 @@ components:
 
                   Finished 2nd with Dragons in U18’s RAG League
         asset: dragons-1684182673.jpg
+        head_line:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: '2014-2019 | '
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                text: 'Dragons Academy'
     type: timeline_block
     enabled: true
   -
@@ -117,5 +204,5 @@ components:
     type: contact_block_two
     enabled: true
 updated_by: 1
-updated_at: 1684182676
+updated_at: 1684513152
 ---
