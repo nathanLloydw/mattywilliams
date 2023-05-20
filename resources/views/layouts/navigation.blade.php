@@ -11,7 +11,7 @@
             @if($navigation_settings['company_logo'])
                 <img src="{{ $navigation_settings['company_logo']['permalink'] }}" class="mr-3 h-6 sm:h-10">
             @endif
-            <span class="self-center text-xl font-semibold whitespace-nowrap">{{ $company_details['company_name'] }}</span>
+            <span class="self-center text-xl font-semibold whitespace-nowrap hover:text-primary">{{ $company_details['company_name'] }}</span>
         </a>
 
         <button id="menu-btn" type="button" class="inline-flex justify-center items-center ml-3 text-gray-400 rounded-lg lg:hidden hover:text-gray-900 focus:outline-none">
@@ -50,7 +50,7 @@
                         </li>
                     @else
                         @if($item['last'])
-                            <li @class(['flex items-center w-full py-2 px-4 border-2 hover:border-primary',
+                            <li @class(['flex items-center w-full py-2 px-4 border-2 border-primary group hover:border-blue-600',
                                         'border-primary'=>$item['is_current'],
                                         'border-gray-900'=>!$item['is_current']])
 
@@ -58,7 +58,7 @@
                                 <a href="{{ $item['url'] }}"
                                         @class(['w-full block py-2 pr-4 pl-3 rounded lg:p-0 inline-flex justify-between',
                                                 'text-white lg:bg-transparent lg:text-primary bg-primary'=>$item['is_current'],
-                                                'text-gray-700 lg:border-0 lg:hover:text-primary'=> !$item['is_current']])>
+                                                'text-gray-700 lg:border-0 text-primary group-hover:text-blue-600'=> !$item['is_current']])>
 
                                     <span @class(['whitespace-nowrap'])>{{ $item['title'] }}</span>
                                 </a>
