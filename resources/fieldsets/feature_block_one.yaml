@@ -47,6 +47,60 @@ fields:
       validate:
         - required
   -
+    handle: asset_type
+    field:
+      placeholder: 'Select Asset Type'
+      options:
+        image: Image
+        video: 'Video (Iframe)'
+      multiple: false
+      clearable: false
+      searchable: true
+      taggable: false
+      push_tags: false
+      cast_booleans: false
+      default: image
+      display: 'Asset Type'
+      type: select
+      icon: select
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      width: 25
+  -
+    handle: image
+    field:
+      mode: list
+      container: images
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      display: Asset
+      type: assets
+      icon: assets
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+      max_files: 1
+      width: 75
+      if:
+        asset_type: 'equals image'
+  -
+    handle: iframe
+    field:
+      input_type: text
+      antlers: false
+      display: Asset
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      if:
+        asset_type: 'equals video'
+      width: 75
+  -
     handle: features
     field:
       collapse: false
@@ -91,21 +145,3 @@ fields:
         - required
       instructions: '4 features required for optimal design'
       max_sets: 4
-  -
-    handle: image
-    field:
-      mode: list
-      container: images
-      restrict: false
-      allow_uploads: true
-      show_filename: true
-      display: Image
-      type: assets
-      icon: assets
-      listable: hidden
-      instructions_position: above
-      visibility: visible
-      always_save: false
-      max_files: 1
-      validate:
-        - required

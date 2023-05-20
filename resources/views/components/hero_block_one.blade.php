@@ -5,7 +5,13 @@
                      'lg:w-1/2'=>$component['block_ratio'] == '50-50',
                      'lg:w-2/3'=>$component['block_ratio'] == '66-33',
                      'lg:w-3/4'=>$component['block_ratio'] == '75-25'])>
-            <img @class(["m-auto",'rounded-lg'=>$component['rounded_image_borders']]) src="{{ $component['hero_image']['permalink'] }}">
+
+            @if($component['asset_type'] == 'image' && isset($component['image']))
+                <img @class(["m-auto",'rounded-lg'=>$component['rounded_image_borders']]) src="{{ $component['image']['permalink'] }}">
+            @elseif($component['asset_type'] == 'video' && isset($component['video']))
+                <div @class(["w-full",'rounded-lg overflow-hidden'=>$component['rounded_image_borders']])>{!! $component['video'] !!}</div>
+            @endif
+
         </div>
     @endif
 
@@ -30,7 +36,13 @@
                      'lg:w-1/2'=>$component['block_ratio'] == '50-50',
                      'lg:w-1/3'=>$component['block_ratio'] == '66-33',
                      'lg:w-1/4'=>$component['block_ratio'] == '75-25'])>
-            <img @class(["m-auto",'rounded-lg'=>$component['rounded_image_borders']]) src="{{ $component['hero_image']['permalink'] }}">
+
+            @if($component['asset_type'] == 'image' && isset($component['image']))
+                <img @class(["m-auto",'rounded-lg'=>$component['rounded_image_borders']]) src="{{ $component['image']['permalink'] }}">
+            @elseif($component['asset_type'] == 'video'  && isset($component['video']))
+                <div @class(["w-full",'rounded-lg overflow-hidden'=>$component['rounded_image_borders']])>{!! $component['video'] !!}</div>
+            @endif
+
         </div>
     @endif
 
