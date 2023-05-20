@@ -16,7 +16,7 @@
     @endif
 
     <div class="w-full lg:w-auto lg:px-10 m-auto flex flex-col items-center py-6">
-        <div class="lg:flex justify-center items-center flex-col mb-5 space-y-2">
+        <div class="lg:flex justify-center items-center flex-col mb-5 space-y-6">
             {!! $component['context'] !!}
         </div>
 
